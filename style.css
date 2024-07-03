@@ -1,0 +1,66 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: grey;
+    color:rgb(190, 35, 35);
+}
+.container{
+    display:grid;
+    grid-template-columns:repeat(3,2fr);
+    gap:10px;
+}
+.container > div
+{
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-position: fixed;
+}
+.container > div:hover
+{
+    opacity: 0.8;
+    transform: scale(0.98);
+}
+.container > div:nth-of-type(1)
+{    grid-column: 1/3;
+}
+.container > div a:hover
+{
+    cursor: pointer;
+}
+.container > div a
+{
+    text-decoration: none;
+    color: black;
+}
+.g-1
+{
+    background-image:url(https://images.indianexpress.com/2024/07/Indian-fams-cheer-SA-team.jpg?w=640);
+    background-size: cover;
+}
+.g-2
+{
+    background-image: url(https://images.indianexpress.com/2023/04/kharge-speech-rajya-sabha.jpg?w=640);
+    background-size: cover;
+}
+.g-3
+{
+    background-image: url(https://images.indianexpress.com/2024/07/Left-to-right-2024-07-01T160455.482.jpg?w=640);
+    background-size: cover;   
+}
+.g-4
+{
+    background-image: url(https://images.indianexpress.com/2024/06/NEET-4col.jpg?w=640);
+    background-size: cover;   
+}
+.g-5
+{
+    background-image: url(https://images.indianexpress.com/2024/06/ai-phones-2024.jpg?w=640);
+    background-size: cover;   
+}
